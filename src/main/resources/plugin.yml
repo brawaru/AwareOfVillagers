@@ -1,0 +1,22 @@
+name: AwareOfVillagers
+version: @version@
+main: com.github.sashasorokin.awareofvillagers.AwareOfVillagers
+api-version: 1.16
+description: Makes you aware of what is happening to your villagers
+commands:
+  awareofvillagers:
+    description: General command for Aware of Villagers plugin
+    usage: awareofvillagers <reload>
+    permission: awareofvillagers.command.use
+    aliases: aov
+
+permissions:
+  awareofvillagers.command.use:
+    description: Gives permission to use general command
+    default: op
+    children:
+      awareofvillagers.command.reload: true
+
+  awareofvillagers.command.reload:
+    description: Gives permission to reload Aware of Villagers config
+    default: op

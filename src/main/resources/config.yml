@@ -1,0 +1,69 @@
+# When villager gets hurt and its health drops below specified %, broadcast a message
+health_alerts:
+  # Are health alerts enabled?
+  # (default: enabled)
+  enabled: true
+  # Minimum health percentage until alert is sent about villager's health
+  # (default: 30)
+  percentage: 30
+
+# Various alerts
+alerts:
+  # Alert when villager dies
+  # (default: enabled)
+  died: true
+  # Alert when villager gets infected by zombie
+  # (default: enabled)
+  infected: true
+  # Alert when villager gets cured
+  # (default: enabled)
+  cured: true
+
+# When zombie villager spawns into the world, a message is sent to nearby players
+detection:
+  # Is feature enabled?
+  # (default: enabled)
+  enabled: true
+  # Spherical range within which players are alerted of a new zombie villager
+  # (default: 8 chunks / 128 blocks)
+  range: 128
+  # Coordinates obfuscation slightly modifies villagers coordinates, so players have to find them on themselves
+  coordinates_obfuscation:
+    # Is coordinates obfuscation enabled?
+    # (default: enabled)
+    enabled: true
+    # Minimum distortion value
+    # (default: 0)
+    min_range: 0
+    # Maximum distortion value
+    # (default: 6)
+    max_range: 6
+
+messages:
+  villager_cured: '&aHooray! &l%player&r&a has cured &l%villager&r&a of infection'
+  villager_hurt: '&6&l%villager&r&6 is hurt (%current / %max) at %x, %y, %z'
+  villager_attacked: '&6&l%villager&r&6 (%current / %max) is attacked by %attacker at %x, %y, %z'
+  villager_died: '&c&l%villager&r&c has died'
+  villager_killed: '&c&l%villager&r&c has been killed by %attacker'
+  villager_infected: '&c&l%villager&r&c has been infected at %x, %y, %z'
+  spawn_detected: '&cZombie villager detected around %x, %y, %z'
+  no_permission: "&cYou don't have permission to execute this command"
+  reload_complete: "&aReload complete!"
+  someone: 'Someone'
+
+villager_profession:
+  armorer: Armorer
+  butcher: Butcher
+  cartographer: Cartographer
+  cleric: Cleric
+  farmer: Farmer
+  fisherman: Fisherman
+  fletcher: Fletcher
+  leatherworker: Leatherworker
+  librarian: Librarian
+  mason: Mason
+  none: Villager
+  nitwit: Nitwit
+  shepherd: Shepherd
+  toolsmith: Toolsmith
+  weaponsmith: Weaponsmith
